@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon May 26 14:51:33 2025
+# Process ID: 13076
+# Current directory: C:/Users/sahar/Documents/Verilog_project/full_adder/Vivado_project/synth_1
+# Command line: vivado.exe -log full_adder_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_adder_tb.tcl
+# Log file: C:/Users/sahar/Documents/Verilog_project/full_adder/Vivado_project/synth_1/full_adder_tb.vds
+# Journal file: C:/Users/sahar/Documents/Verilog_project/full_adder/Vivado_project/synth_1\vivado.jou
+# Running On: DESKTOP-QJO5Q7O, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 34024 MB
+#-----------------------------------------------------------
+source full_adder_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 469.672 ; gain = 176.410
+Command: synth_design -top full_adder_tb -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2124
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 916.984 ; gain = 443.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'full_adder_tb' [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:1]
+INFO: [Synth 8-251] a b cin | sum cout [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:16]
+INFO: [Synth 8-251] --------------- [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:17]
+INFO: [Synth 8-251] 1'b0 1'b0  1'b0  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:19]
+INFO: [Synth 8-251] 1'b0 1'b0  1'b1  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:20]
+INFO: [Synth 8-251] 1'b0 1'b1  1'b0  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:21]
+INFO: [Synth 8-251] 1'b0 1'b1  1'b1  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:22]
+INFO: [Synth 8-251] 1'b1 1'b0  1'b0  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:23]
+INFO: [Synth 8-251] 1'b1 1'b0  1'b1  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:24]
+INFO: [Synth 8-251] 1'b1 1'b1  1'b0  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:25]
+INFO: [Synth 8-251] 1'b1 1'b1  1'b1  |  1'bx    1'bx [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:26]
+WARNING: [Synth 8-11581] system task call 'finish' not supported [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:28]
+INFO: [Synth 8-6157] synthesizing module 'full_adder_beh' [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder beh.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder_beh' (0#1) [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder beh.v:1]
+ERROR: [Synth 8-11365] for the instance 'uut' of module 'full_adder_beh' declared at 'C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder beh.v:1', named port connection 'cout' does not exist [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:12]
+ERROR: [Synth 8-6156] failed synthesizing module 'full_adder_tb' [C:/Users/sahar/Documents/Verilog_project/full_adder/fulladder_tb.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1023.977 ; gain = 550.332
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 14:51:48 2025...

@@ -11,6 +11,8 @@
 *.ip_user_files/
 *.sim/
 *.hw/
+*.vvp
+*.vcd
 
 # macOS
 .DS_Store

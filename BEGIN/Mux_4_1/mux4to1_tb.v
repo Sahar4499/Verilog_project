@@ -15,6 +15,10 @@ module mux4to1_tb;
     );
 
     initial begin
+        $dumpfile("wave.vcd");        // קובץ הפלט ל־GTKWave
+        $dumpvars(0, mux4to1_tb);     // שומרים את כל הסיגנלים מתוך המודול הזה
+
+
         $display("sel | in0 in1 in2 in3 | out");
         $monitor("%b   |  %b   %b   %b   %b  |  %b", sel, in0, in1, in2, in3, out);
 

@@ -2,8 +2,9 @@ module full_adder_tb;
     reg a, b, cin;
     wire sum, cout;
 
-    // שנה כאן לשם המודול שתרצה לבדוק (full_adder_df או full_adder_beh)
-    full_adder_df uut (
+    
+    full_adder uut 
+    (
         .a(a),
         .b(b),
         .cin(cin),
